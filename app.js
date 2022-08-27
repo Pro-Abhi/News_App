@@ -10,7 +10,7 @@ buttonClass.addEventListener("click", function (event) {
   container.innerHTML = "";
 
   fetch(
-    `https://newsapi.org/v2/everything?q=${inputClass.value}&from=2022-07-27&sortBy=publishedAt&apiKey=a678c91dfe4e48dcb6aa50005c20f263`
+    `https://newsapi.org/v2/everything?q=${inputClass.value}&from=2022-08-27&sortBy=popularity&apiKey=a678c91dfe4e48dcb6aa50005c20f263`
   )
     .then((result) => result.json())
     .then((data) => {
